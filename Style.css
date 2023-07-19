@@ -1,0 +1,603 @@
+/* Desktop screens */ 
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 20px;
+    }
+
+    .code-p, ul.skill, .second-p, .certificate, p.bio{
+        font-size: 20px;
+    }
+
+    .plage{
+        text-align: center;
+        margin-top: 12px;
+    }
+    
+    .beach{
+        width: 80%;
+        height:450px;
+    }
+
+    .code{
+        width:50%;
+        height: 500px;
+        box-shadow: 0 0 10px ;
+        border-radius: 90px 90px 90px 90px;
+    }
+    .second{
+        width:30%;
+        height: 10%; 
+    }
+
+    img.flower1{
+        width: 530px;
+        margin-top: 29px;
+        border-radius: 40px;
+        
+       
+    }
+    img.flower2{
+        width: 530px;
+        margin-top: 29px;
+        border-radius: 40px ;
+       
+    }
+
+    .flow{
+        text-align: center;
+    }
+
+    section.section{
+        position: relative;
+        left: 10%;
+    }
+
+    div#image-container, div#sql, div#jquery, div#ipv4, div#computer, div#sass, div#node{
+        text-align: center;
+    }
+
+    img.web, img.sql, img.jquery, img.ipv4, img.computer, img.sass, img.node{
+        width: 530px;
+        box-shadow: 0 0 10px;
+        border-radius: 4px;
+    }
+    #close-button, #close-computer, #close-ipv4, #close-sass, #close-node, #close-sql, #close-jquery{
+        margin-top: 13px;
+        background-color: blue;
+        border: none;
+        padding: 5px 24px;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+
+}
+
+
+ /* Tablet screens */
+ @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .plage{
+        text-align: center;
+        margin-top: 12px;
+       
+       
+    }
+    
+    .beach{
+        width: 500px;
+        height: 300px;
+    }
+
+    .code{
+        width:350px;
+        height:300px;
+        box-shadow: 0 0 10px ;
+        border-radius: 90px 90px 90px 90px;
+    }
+    .second{
+        width:30%;
+        height: 10%; 
+    }
+
+    img.flower1{
+        width: 530px;
+        margin-top: 29px;
+        border-radius: 40px;
+        
+       
+    }
+    img.flower2{
+        width: 530px;
+        margin-top: 29px;
+        border-radius: 40px ;
+       
+    }
+
+    .flow{
+        text-align: center;
+    }
+
+    section.section{
+        margin-top: 25%;
+        width: 60%;
+        position: relative;
+        left: 14%;
+    }
+
+    div#image-container, div#sql, div#jquery, div#ipv4, div#computer, div#sass, div#node{
+        text-align: center;
+       
+    }
+
+    img.web, img.sql, img.jquery, img.ipv4, img.computer, img.sass, img.node{
+        width: 530px;
+        box-shadow: 0 0 10px;
+        border-radius: 4px;
+       
+    }
+    #close-button, #close-computer, #close-ipv4, #close-sass, #close-node, #close-sql, #close-jquery{
+        margin-top: 13px;
+        background-color: blue;
+        border: none;
+        padding: 5px 24px;
+        color: white;
+        border-radius: 3px;
+    }
+
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+      
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+ }
+
+
+/* Phone*/
+@media only screen and (max-width: 768px) {
+    .plage{
+        text-align: center;
+        margin-top: 12px;
+    }
+    
+    p.bio {
+      font-size: 11px;
+    }
+    
+    .beach{
+        width: 350px;
+        height: 200px;
+    }
+    .code{
+        width:300px;
+        height: 300px;
+        box-shadow: 0 0 10px ;
+        border-radius: 90px 90px 90px 90px;
+    }
+    .second{
+        width:50%;
+        height: 10%; 
+    }
+    
+    .second-p, .read{
+      font-size: 11px;
+    }
+
+    .flow{
+        text-align: center;
+    }
+
+    .flower1{
+        width: 300px;
+        margin-top: 29px;
+        border-radius: 40px;
+        
+       
+    }
+    .flower2{
+        width: 300px;
+        margin-top: 29px;
+        border-radius: 40px ;
+       
+    }
+
+    div#image-container, div#sql, div#jquery, div#ipv4, div#computer, div#sass, div#node{
+        text-align: center;
+       
+    }
+
+    
+
+    img.web, img.sql, img.jquery, img.ipv4, img.computer, img.sass, img.node{
+        width: 300px;
+        box-shadow: 0 0 10px ;
+        border-radius: 4px;
+        
+    }
+    #close-button, #close-computer, #close-ipv4, #close-sass, #close-node, #close-sql, #close-jquery{
+        margin-top: 13px;
+        background-color: blue;
+        border: none;
+        padding: 5px 24px;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+      
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+  }
+
+ 
+header{
+    text-align: center;
+   align-content: center;
+   color: white;
+   text-shadow: 0px 0px 10px black;
+  
+}
+
+
+.welcome{
+    background-color: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 6px;
+}
+
+h1{
+    display: none;
+}
+
+.name{
+    background-color: blue;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+h1{
+    padding-top: 60px;
+}
+
+
+.fig1{
+   margin-top: 12%;
+   font-size: 16px;
+   text-align: center;
+}
+.fig2{
+   margin-top: 20%;
+   font-size: 16px;
+   
+}
+
+.code-p{
+    background-color: lightskyblue;
+    padding: 12px 40px;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0 0 10px;
+}
+
+.section{
+    background-color: lightskyblue;
+    padding: 12px 50px;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0 0 10px;
+}
+
+.second-p{
+  padding: 12px 50px;
+  font-style: italic;
+}
+
+
+header{
+ background-image: url(/web\ dev\ coding.png);
+ background-color: darkblue;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: auto 100%;
+ border-radius: 5px;
+ height:150px;
+}
+
+
+.section{
+    margin-top: 22%;
+    width: 70%;
+    position: relative;
+    left: 3%;
+}
+
+.bio{
+
+    font-family: serif;
+    font-size: 16px;
+    color: blue;
+    text-align: justify;
+   
+}
+
+.CONTACT{
+    margin-top: 60px;
+    background-color: gray;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.contact{
+   margin: 12px;
+   text-decoration: none;
+   color: blue;
+}
+
+.contact:hover{
+    
+    border-radius: 3px;
+    color: white;
+}
+
+.skill{
+    margin-left: 0%;
+    margin-top: 90px;
+    font-weight: bold;
+    font-size: 16px;
+    list-style-type:disc;
+    background-color: lightskyblue;
+    padding: 12px 40px;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0 0 10px;
+}
+
+.skill-p{
+    background-color: blue;
+    color: white;
+    padding-left: 8px;
+    border-radius: 50px;
+}
+
+.li2{
+    
+    margin-top: 2%;
+}
+.li3{
+   
+    margin-top: 2%;
+}
+.li4{
+   
+    margin-top: 2%;
+}
+.li5{
+   
+    margin-top: 2%;
+}
+.li6{
+   
+    margin-top: 2%;
+}
+.li7{
+   
+    margin-top: 2%;
+}
+.li8{
+    
+    margin-top: 2%;
+}
+.li9{
+    
+    margin-top: 2%;
+}
+
+.certificate{
+    color: red;
+    font-weight: bold;
+    background-color: lightskyblue;
+    padding: 12px 40px;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0 0 10px;
+}  
+
+.certificate-p{
+    color: white;
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+li.li{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btc, .sky, .ness {
+    color: blue;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.crypto{
+    margin-top: 9px;
+   background-color: greenyellow;
+   border-radius: 5px;
+   box-shadow: 0 0 10px;
+   
+}
+
+#toggle-btn{
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px;
+}
+
+#toggle-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#btc-price, #skycoin-price, #ness-price{
+    color: green;
+    font-weight: bold;
+    margin-left: 14px;
+}
+
+.cxo {
+  text-align: center;
+}
+.cx {
+  text-decoration: none;
+}
+
+
+footer{
+    font-size: 12px;
+}
+
+/*animation */
+.welcome, .second, .second-p,
+.certificate-p, .li, .name, .bio, .flower1, .flower2,
+.skill-p, .skill,
+.li1, .code, .code-p, .certificate, .section,
+.li2, .crypto, .right,
+.li3,
+.li4,
+.li5,
+.li6,
+.li7,
+.li8,
+.li9, .plage, .cxo, .read
+{
+    opacity: 0;
+}
+
+.welcome.animate__animated, 
+.second.animate__animated,
+ .second-p.animate__animated, 
+ .certificate-p.animate__animated,
+  .li.animate__animated, 
+  .name.animate__animated,
+   .bio.animate__animated, .flower1.animate__animated,
+   .flower2.animate__animated,
+    .skill-p.animate__animated,
+    .li1.animate__animated,
+    .li2.animate__animated,
+    .li3.animate__animated,
+    .li4.animate__animated,
+    .li5.animate__animated,
+    .li6.animate__animated,
+    .li7.animate__animated,
+    .li8.animate__animated,
+    .li9.animate__animated,
+    .plage.animate__animated,
+    .skill.animate__animated,
+    .code.animate__animated,
+    .code-p.animate__animated,
+    .certificate.animate__animated,
+    .section.animate__animated,
+    .crypto.animate__animated,
+    .right.animate__animated,
+    .cxo.animate__animated,
+    .read.animate__animated
+    {
+    opacity: 1;
+}
+
+.welcome, .name, .plage, .cxo, .read{
+    animation-delay: 0.5s;
+}
+.code, .certificate-p, .bio, .skill{
+    animation-delay: 1.4s;
+}
+.li1{
+    animation-delay: 1.6s;
+}
+.li2, .li{
+    animation-delay: 1.7s;
+}
+.li3, .flower1, .flower2{
+    animation-delay: 1.8s;
+}
+.li4{
+    animation-delay: 1.9s;
+}
+.li5{
+    animation-delay: 2s;
+}
+.li6{
+    animation-delay: 2.1s;
+}
+.li7{
+    animation-delay: 2.2s;
+}
+.li8{
+    animation-delay: 2.3s;
+}
+.li9{
+    animation-delay: 2.4s;
+}
+
+  

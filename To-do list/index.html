@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>To-Do List</h1>
+		<h1>jQuery CRUD</h1>
+		<h1>&</h1>
+		<h1>data persistence</h1>
+		<form>
+			<input type="text" id="new-item" placeholder="Enter a new task">
+			<button type="submit">Add</button>
+		</form>
+		<ul id="task-list">
+			<!-- Tasks will be dynamically added here -->
+		</ul>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="app.js"></script>
+<script>
+	$(function() {
+		// Load any saved tasks from localstorage
+		if (localStorage.getItem("tasks")) {
+			$("#task-list").html(localStorage.getItem("tasks"));
+		}
+
+		// Add new task to list on form submit
+		$("form").submit(function(event) {
+			event.preventDefault();
+
+			var newTask = $("#new-item").val().trim();
+			if (newTask) {
+    $("#task-list").append("<li><span>" + newTask + "</span> <button class='delete-button'>Delete</button> <button class='update-button'>Update</button></li>");
+				$("#new-item").val("");
+				saveTasks();
+			}
+		});
+
+		// Mark task as completed on click
+		$(document).on("click", "li", function() {
+			$(this).toggleClass("checked");
+			saveTasks();
+		});
+
+		// Delete task on delete button click
+		$(document).on("click", ".delete-button", function(event) {
+			event.stopPropagation();
+			$(this).parent().remove();
+			saveTasks();
+		});
+		
+// Update tasks
+$(document).on("click", ".update-button", function(event) {
+  event.stopPropagation();
+  var taskText = $(this).siblings("span:first").text();
+  console.log("Current task text:", taskText);
+  var updatedTaskText = prompt("Update task:", taskText);
+  console.log("Updated task text:", updatedTaskText);
+  if (updatedTaskText) {
+    $(this).siblings("span").text(updatedTaskText);
+   $("#new-item").val("");
+    saveTasks();
+    console.log("Task list saved:", $("#task-list").html());
+  }
+});
+
+		// Save tasks to localstorage
+		function saveTasks() {
+			localStorage.setItem("tasks", $("#task-list").html());
+		}
+	});
+</script>
+</body>
+</html>

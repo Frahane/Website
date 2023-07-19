@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Unleash Your Inner Explorer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#destination">Destinations</a>
+        <a href="#guides">Guides</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#community">Community</a>
+        <a href="#" class="cta">Join Now</a>
+        <form>
+          <input type="text" placeholder="Search">
+          <button type="submit">Go</button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1 class="hero-h1">Wanderlust</h1>
+        <h2 class="hero-h2">Unleash Your Inner Explorer</h2>
+        <a href="#" class="cta">Join Now</a>
+      </section>
+      <section id="featured">
+   <div>
+     <img class="slideshow" src="/Landing page/Palm Beach 1.jpg" alt="Featured Destination">
+     
+     <img class="slideshow" src="/Landing page/Palm Beach 2.jpg" alt="Featured Destination">
+     
+    <img class="slideshow" src="/Landing page/Palm Beach 3.jpg" alt="Featured Destination">
+    
+  </div>
+  <div id="destination" class="destination">
+    <h3 class="H3">Featured Destination</h3>
+    <p class="P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod sagittis leo eget ultrices. </p>
+    <a href="#" class="cta">Learn More</a>
+  </div>
+</section>
+     
+      <section id="guides">
+        <h3>Meet the Guides</h3>
+        <ul>
+          <li class="guide hiking">
+            <img class="img" src="/Landing page/hiking.jpg" alt="Guide 1" style="width: 60%">
+            <span class="right"> <b>Jane Doe</b><br>
+            Specialty: Hiking <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod sagittis leo eget ultrices.
+            </span>
+          </li>
+          <li class="guide culture">
+            <img class="img" src="/Landing page/Cultural tour.jpg" alt="Guide 2">
+            <span class="right">
+              <b>John Smith</b> <br>
+              Specialty: Cultural Tours
+              <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod sagittis leo eget ultrices.
+            </span>
+          </li>
+          <li class="guide adventure">
+            <img class="img" src="/Landing page/adventure sports.jpg" alt="Guide 3">
+            <span class="right"><b>Samantha Jones</b>
+            <br>
+            Specialty: Adventure Sports
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod sagittis leo eget ultrices.
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section id="experiences" class="experiences">
+        <h3>Unique Experiences</h3>
+        <ul>
+          <li>
+            <img class="cooking" src="/Landing page/Cooking 03.jpg" alt="Experience 1">
+            <h4>Cooking Classes</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li>
+            <img class="artisan" src="/Landing page/Artisan 1.jpg" alt="Experience 2">
+            <h4>Artisan Workshops</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+          <li class="advent">
+            <img class="tours" src="/Landing page/Adventure tours 2.jpg" alt="Experience 3">
+            <h4>Adventure Tours</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </li>
+        </ul>
+      </section>
+      <section id="community">
+        <h3>Community</h3>
+        <div class="user-reviews">
+          <img src="/Landing page/Experience 1.jpg" alt="User 1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="user-reviews">
+      <img src="/Landing page/Experience 2.jpg" alt="User 2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="user-reviews">
+      <img src="/Landing page/Experience 3.jpg" alt="User 3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <nav>
+    <a href="#">About Us</a>
+    <a href="#">FAQ</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="social-media">
+    <a href="#"><i class="fab fa-facebook-square">
+      
+    </i></a>
+    <a href="#"><i class="fab fa-twitter-square">
+      
+    </i></a>
+    <a href="#"><i class="fab fa-wharsapp-square"></i></a>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var slides = $(".slideshow");
+    var destination = $(".destination");
+    var i;
+    for (i = 0; i < 3; i++) {
+      slides[i].style.display ="none";
+    }
+    slideIndex++;
+    if (slideIndex > 3) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    destination.show().delay(1000).fadeIn(1000);
+    setTimeout(showSlides, 2000);
+  };
+});
+</script>
+  </body>
+</html>
