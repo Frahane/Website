@@ -1,0 +1,245 @@
+@media only screen and (width: 600px) and (height: 960px) {
+  /* CSS rules for Nexus 7 */
+  div.container {
+     width: 406px;
+     padding: 50px 60px;
+  }
+}
+
+@media only screen and (width: 960px) and (height: 600px) and (orientation: landscape) {
+  /* CSS rules for Nexus 7 in landscape */
+  div.container {
+     width: 606px;
+     padding: 30px 120px;
+  }
+  
+  div.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 30px 35px;
+}
+}
+
+
+
+@media only screen and (width: 768px) and (height: 1024px) {
+  /* CSS rules for iPad */
+}
+
+@media only screen and (width: 1024px) and (height: 768px) and (orientation: landscape) {
+  /* CSS rules for iPad in landscape */
+}
+
+
+
+@media only screen and (width: 375px) and (height: 812px) {
+  /* CSS rules for iPhone X */
+}
+
+@media only screen and (width: 812px) and (height: 375px) and (orientation: landscape) {
+  /* CSS rules for iPhone X in landscape */
+}
+
+
+
+@media only screen and (width: 375px) and (height: 667px) {
+  /* CSS rules for iPhone 6/7/8 */
+}
+
+@media only screen and (width: 667px) and (height: 375px) and (orientation: landscape) {
+  /* CSS rules for iPhone 6/7/8 in landscape */
+}
+
+
+
+@media only screen and (width: 320px) and (height: 568px) {
+  /* CSS rules for iPhone 5 */
+}
+
+@media only screen and (width: 568px) and (height: 320px) and (orientation: landscape) {
+  /* CSS rules for iPhone 5 in landscape */
+}
+
+
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  /* CSS rules for iPad Pro */
+}
+
+@media only screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+  /* CSS rules for iPad Pro in landscape */
+}
+
+
+
+@media only screen and (width: 800px) and (height: 1280px) {
+  /* CSS rules for Nexus 10 */
+}
+
+@media only screen and (width: 1280px) and (height: 800px) and (orientation: landscape) {
+  /* CSS rules for Nexus 10 in landscape */
+}
+
+
+:root {
+  --main-color: #005DD9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  width: 346px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.output {
+  border: solid 2px var(--main-color);
+  height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.output input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-align: end;
+  padding-right: 20px;
+  color: var(--main-color);
+}
+
+.output input::placeholder {
+  color: var(--main-color);
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px 15px;
+}
+
+.btns button {
+  border: none;
+  outline: none;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: var(--main-color);
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.btns button.sp {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.btns button.equal {
+  width: 135px;
+  border-radius: 22px;
+}
+
+.appmenu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  gap: 5px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.icon span {
+  background-color: var(--main-color);
+  height: 5px;
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.menu {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  gap: 30px;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: 0.3s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu.open {
+  transform: scale(1);
+}
+
+.menu div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: solid 2px #818181;
+}
+
+.menu div:nth-child(1) {
+  background-color: #005DD9;
+}
+
+.menu div:nth-child(2) {
+  background-color: #DF8F12;
+}
+
+.menu div:nth-child(3) {
+  background-color: #E23434;
+}
+
+.menu div:nth-child(4) {
+  background-color: #622AEB;
+}
+
+.menu div:nth-child(5) {
+  background-color: #FF20A1;
+}
+
+body.blue {
+  --main-color: #005DD9;
+}
+
+body.orange {
+  --main-color: #DF8F12;
+}
+
+body.red {
+  --main-color: #E23434;
+}
+
+body.purple {
+  --main-color: #622AEB
+}
+
+body.pink {
+  --main-color: #FF20A1;
+}

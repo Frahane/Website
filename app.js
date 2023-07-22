@@ -108,7 +108,7 @@ $(function () {
   function () {
    $(".second-p").addClass("animate__animated animate__bounceInRight");
   },
-  { offset: "60%" }
+  { offset: "40%" }
  );
 
  $(".certificate-p").waypoint(
@@ -157,7 +157,7 @@ $(function () {
   function () {
    $(".flower2").addClass("animate__animated animate__bounceInLeft");
   },
-  { offset: "60%" }
+  { offset: "40%" }
  );
 
  $(".plage").waypoint(
