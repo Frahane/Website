@@ -256,10 +256,16 @@
        
     }
 
-    div#image-container, div#sql, div#jquery, div#ipv4, div#computer, div#sass, div#node{
-        text-align: center;
-       
-    }
+    #image-container,
+#computer,
+#ipv4,
+#jquery,
+#sql,
+#sass,
+#node {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
     
 
@@ -269,14 +275,20 @@
         border-radius: 4px;
         
     }
-    #close-button, #close-computer, #close-ipv4, #close-sass, #close-node, #close-sql, #close-jquery{
-        margin-top: 13px;
-        background-color: blue;
-        border: none;
-        padding: 5px 24px;
-        color: white;
-        border-radius: 3px;
-    }
+    
+    button[id^="close"] {
+  background-color: #17a2b8;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.myImg:hover {
+  transform: scale(1.05);
+}
 
     .modal {
         display: none;
@@ -305,7 +317,7 @@
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
-        transition: 0.3s;
+        transition: color 0.2s;
       }
       
       .close:hover,
@@ -315,6 +327,10 @@
         cursor: pointer;
       }
   }
+  
+  body {
+  background-color: #f9f9f9;
+}
 
  
 header{
@@ -326,13 +342,28 @@ header{
 }
 
 
-.welcome{
-    background-color: red;
-    color: white;
-    width: 100%;
+.welcome {
+    background-color: #3498db; 
+    color: #ffffff; 
+    width: 92%;
     text-align: center;
-    border-radius: 3px;
-    margin-top: 6px;
+    border-radius: 10px; 
+    margin-top: 20px; 
+    padding: 15px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); 
+    font-size: 14px; 
+    font-weight: bold;
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease; 
+
+    
+    cursor: pointer;
+}
+
+
+.welcome:hover {
+    background-color: #2980b9; 
 }
 
 h1{
@@ -340,8 +371,8 @@ h1{
 }
 
 .name{
-    background-color: blue;
-    color: white;
+    background-color: #fff;
+    color: grey;
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 50px;
@@ -367,18 +398,20 @@ h1{
 }
 
 .code-p{
-    background-color: lightskyblue;
+    background-color: lavender;
     padding: 12px 40px;
     border-radius: 40px 40px 40px 40px;
     box-shadow: 0 0 10px;
 }
 
-.section{
-    background-color: lightskyblue;
-    padding: 12px 50px;
-    border-radius: 40px 40px 40px 40px;
-    box-shadow: 0 0 10px;
+.section {
+  background-color: #f5f5f5;
+  padding: 12px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
+
 
 .second-p{
   padding: 12px 50px;
@@ -386,14 +419,17 @@ h1{
 }
 
 
-header{
- background-image: url(/web\ dev\ coding.png);
- background-color: darkblue;
- background-repeat: no-repeat;
- background-position: center;
- background-size: auto 100%;
- border-radius: 5px;
- height:150px;
+header {
+    background-image: url(/web\ dev\ coding.png);
+    background-color: #1a237e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px; 
+    height: 200px;
+
+    /* Adding a subtle box-shadow for depth */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -404,14 +440,14 @@ header{
     left: 3%;
 }
 
-.bio{
-
-    font-family: serif;
-    font-size: 16px;
-    color: blue;
-    text-align: justify;
-   
+.bio {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 10px;
+  text-align: justify;
 }
+
 
 .CONTACT{
     margin-top: 60px;
@@ -420,11 +456,30 @@ header{
     border-radius: 1px;
 }
 
-.contact{
-   margin: 12px;
-   text-decoration: none;
-   color: blue;
+.contact {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid #17a2b8;
+  background-color: #17a2b8;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s, border-color 0.2s;
 }
+
+.contact[target="_blank"]:after {
+  content: "\2197";
+  margin-left: 5px;
+}
+
+.contact[rel="noopener noreferrer"]::after {
+  content: "\1F855";
+  margin-left: 5px;
+}
+
+
 
 .contact:hover{
     
@@ -432,70 +487,56 @@ header{
     color: white;
 }
 
-.skill{
-    margin-left: 0%;
-    margin-top: 90px;
-    font-weight: bold;
-    font-size: 16px;
-    list-style-type:disc;
-    background-color: lightskyblue;
-    padding: 12px 40px;
-    border-radius: 40px 40px 40px 40px;
-    box-shadow: 0 0 10px;
+
+.skill {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.skill-p{
-    background-color: blue;
-    color: white;
+.skill-p {
+    background-color: #fff;
+    color: grey;
     padding-left: 8px;
+    padding-right: 8px;
     border-radius: 50px;
-}
-
-.li2{
-    
-    margin-top: 2%;
-}
-.li3{
-   
-    margin-top: 2%;
-}
-.li4{
-   
-    margin-top: 2%;
-}
-.li5{
-   
-    margin-top: 2%;
-}
-.li6{
-   
-    margin-top: 2%;
-}
-.li7{
-   
-    margin-top: 2%;
-}
-.li8{
-    
-    margin-top: 2%;
-}
-.li9{
-    
-    margin-top: 2%;
-}
-
-.certificate{
-    color: red;
+    text-align: center;
+    font-size: 14px;
     font-weight: bold;
-    background-color: lightskyblue;
-    padding: 12px 40px;
-    border-radius: 40px 40px 40px 40px;
-    box-shadow: 0 0 10px;
-}  
+    margin-bottom: 10px;
+}
+
+
+
+.li2, .li3, .li4, .li5, .li6, .li7, .li8, .li9 {
+    
+    margin-top: 2%;
+}
+
+
+.certificate {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 .certificate-p{
-    color: white;
-    background-color: blue;
+    background-color: #fff;
+    color: grey;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
     width: 100%;
     text-align: center;
     border-radius: 50px;
@@ -506,19 +547,28 @@ li.li{
     cursor: pointer;
 }
 
-.btc, .sky, .ness {
-    color: blue;
-    font-weight: bold;
-    margin-left: 12px;
+
+.crypto {
+    background-color: #f7f7f7; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
 }
 
-.crypto{
-    margin-top: 9px;
-   background-color: greenyellow;
-   border-radius: 5px;
-   box-shadow: 0 0 10px;
-   
+
+.btc, .sky, .ness {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
 }
+
+
+#btc-price, #skycoin-price, #ness-price { font-size: 16px; margin-bottom: 10px; } 
+
+.refresh { color: red; font-size: 12px; margin-left: 12px; }
 
 #toggle-btn{
     background-color: green;
@@ -535,11 +585,7 @@ li.li{
     cursor: pointer;
 }
 
-#btc-price, #skycoin-price, #ness-price{
-    color: green;
-    font-weight: bold;
-    margin-left: 14px;
-}
+
 
 .cxo {
   text-align: center;
